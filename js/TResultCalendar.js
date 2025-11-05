@@ -547,7 +547,8 @@ class TResultCalendar
 	AddMatchedFestivals() {
 		var currFestTop = 0;
 		var i;
-		for (i = this.BEFORE_DAYS; i < this.m_PureCount + this.BEFORE_DAYS - 1; i++)
+		// CORRECT - includes all days  
+for (i = this.BEFORE_DAYS; i < this.m_PureCount + this.BEFORE_DAYS; i++)
 		{
 			//console.log('festival check -> ', i)
 			for(var book of gEvents) {
